@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Resort List</h1>
+  {% if resort_list %}
+  <ul>
+    {% for resort in resort_list %}
+      <li>
+        <a href="{{ resort.get_absolute_url }}">{{ resort.resort_name }}</a> ({{resort.resort_name}})
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no resorts in the library.</p>
+  {% endif %}       
+{% endblock %}

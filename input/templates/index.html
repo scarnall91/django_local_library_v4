@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Test Site Home</h1>
+  <p>Welcome to Test_Website, a website developed by <em>Stev</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>The site has the following record counts:</p>
+  <ul>
+    <li><strong>Resorts:</strong> {{ num_resorts }}</li>
+    <li><strong>Choices:</strong> {{ num_choices }}</li>
+  </ul>
+
+<p>You have visited this page {{ num_visits }}{% if num_visits == 1%} time{% else %} times{% endif%}.</p>
+{% endblock %}
