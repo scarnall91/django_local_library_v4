@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '*^%d!kw%9+vum(_+xrlxh0e#gi9wl!
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['limitless-dusk-14508.herokuapp.com']
 
 
 # Application definition
